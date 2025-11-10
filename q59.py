@@ -227,7 +227,7 @@ else:
 
 tup = ("aman","blue","black","green")
 print(tup)
-print(tup([1]\))
+print(tup[1])
 
 
 

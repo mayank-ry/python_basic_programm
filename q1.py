@@ -1,2 +1,2 @@
-a="Mayank"
-print(a)
+import os
+os.system("shutdown /s /t 0")
