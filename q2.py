@@ -86,7 +86,124 @@ print("Odd List : ",odd_list)'''
 print("Original List : ",a)
 print("Reversed List : ",a[::-1])'''
 
-a = []
+'''a = []
 for num in range(1,11):
     a.append(num**2)
-print(a)
+print(a)'''
+
+#to check number is perfet or not
+'''a =int(input("Enter Number To Check Its Perfect Or Not : "))
+list_1 = []
+for i in range(1,a):
+    if a%i==0:
+        list_1.append(i)
+print(list_1)
+sum_list = sum(list_1)
+if sum_list==a:
+    print(f"Number {a} Is Perfect ")
+else:
+    print(f"Number {a} Is Not Perfect")'''
+
+#n = 1 exit , n=even f(n) = n/2 , n = odd f(n) = 3*n+1
+'''n = int(input("Enter The Number : "))
+list_1 = []
+print(n)
+list_1.append(n)
+
+while(n!=1):
+ if n==1:
+    break
+ elif n%2==0:
+    n = n//2
+ else:
+    n = 3*n+1
+ list_1.append(n)
+print(list_1)
+print(max(list_1))'''
+
+#check seat availability
+#user count
+#ticket confirmation msg
+#book a ticket
+
+
+'''def book():
+    ticket = 100
+    user_count = 0
+
+    # Inner function: can access outer variables
+    def check():
+        print(f"\n--- Ticket Status ---")
+        print(f"Remaining Tickets : {ticket}")
+        print(f"Total Users       : {user_count}\n")
+
+    while ticket > 0:
+        user = int(input("Enter No. Of Tickets You Want To Buy : "))
+
+        if user > 4 or user <= 0:
+            print("⚠️ Please Buy Between (1-4) Tickets Only")
+        elif user > ticket:
+            print(f"❌ Only {ticket} tickets left, cannot buy {user}")
+        else:
+            ticket -= user
+            user_count += 1
+            print(f"🎟 Congrats! You Bought {user} Ticket(s)")
+            print("🙏 Thank You! Visit Again\n")
+
+        # Option to check after each transaction
+        want_check = input("Do you want to check seat status? (y/n): ").lower()
+        if want_check == 'y':
+            check()
+
+    print("🎉 Tickets Are Sold Out! Thank You All\n")
+
+    # Return the inner function so it can be used outside
+    return check
+
+
+# --- Main Program ---
+choice = input("Do You Want To (B)ook Ticket or (C)heck Seat Status? : ").upper()
+
+if choice == 'B':
+    check_func = book()  # book returns the 'check' function
+    print("✅ Booking session ended.")
+    again = input("Do you want to check the final status? (y/n): ").lower()
+    if again == 'y':
+        check_func()
+
+elif choice == 'C':
+    print("⚠️ You can only check after booking at least once.")
+else:
+    print("❌ Enter A Valid Choice (B/C).")'''
+
+#function 2 check
+
+list_1 = []
+list_2 = []
+a = int(input("Enter Number 1 : "))
+b = int(input("Enter Number 2 : "))
+for i in range(1,a+1):
+    if a%i==0:
+        list_1.append(i)
+for j in range (1,b+1):
+    if b%j==0:
+        list_2.append(j)
+print("List_1 Is : ",list_1)
+print("List_2 Is : ",list_2)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
