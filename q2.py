@@ -143,7 +143,7 @@ print(max(list_1))'''
         if user > 4 or user <= 0:
             print("⚠️ Please Buy Between (1-4) Tickets Only")
         elif user > ticket:
-            print(f"❌ Only {ticket} tickets left, cannot buy {user}")
+            print(f" Only {ticket} tickets left, cannot buy {user}")
         else:
             ticket -= user
             user_count += 1
@@ -166,7 +166,7 @@ choice = input("Do You Want To (B)ook Ticket or (C)heck Seat Status? : ").upper(
 
 if choice == 'B':
     check_func = book()  # book returns the 'check' function
-    print("✅ Booking session ended.")
+    print(" Booking session ended.")
     again = input("Do you want to check the final status? (y/n): ").lower()
     if again == 'y':
         check_func()
@@ -174,7 +174,7 @@ if choice == 'B':
 elif choice == 'C':
     print("⚠️ You can only check after booking at least once.")
 else:
-    print("❌ Enter A Valid Choice (B/C).")'''
+    print(" Enter A Valid Choice (B/C).")'''
 
 #function 2 check
 
