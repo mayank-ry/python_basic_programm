@@ -7,5 +7,3 @@ def multiply(a,b):
         return a
     else:
         return a + multiply(a,b-1)
-
-print(multiply(5,5))
