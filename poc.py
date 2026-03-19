@@ -10,3 +10,12 @@ Stationery = [Product, Price, Brand]
 print(Stationery[0])
 print(Stationery[0][0])
 print(Stationery[0][1])
+
+s = {1,2,3,4}
+print(s)
+s.clear()
+print(s)
+
+Mylist =['a', 'a', 'b','b','c','a']
+print(Mylist.index('a'))
+import pandas as pd
