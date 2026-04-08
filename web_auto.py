@@ -11,7 +11,7 @@ browser.get("https://www.google.com")   # updated site
 time.sleep(2)
 search = browser.find_element(By.ID,"APjFqb")
 time.sleep(2)
-search.send_keys("Nikku Naksha Vala")
+search.send_keys("Unique Computer institute indorama mp")
 time.sleep(2)
 search.send_keys(Keys.ENTER)
 time.sleep(2)
